@@ -59,10 +59,12 @@ public class JedisUtils {
         }
     }
 
+    //TODO 1 声明一个JedisCluster
     public static JedisCluster jedisCluster = null;
     public static JedisCluster getJedisCluster(){
-
         if (jedisCluster == null){
+
+            //TODO JedisPoolConfig基本配置
             JedisPoolConfig jedisPoolConfig = new JedisPoolConfig();
             jedisPoolConfig.setMaxTotal(10);
             jedisPoolConfig.setMaxIdle(5);
@@ -71,14 +73,13 @@ public class JedisUtils {
             jedisPoolConfig.setMaxWaitMillis(2000);
             jedisPoolConfig.setTestOnBorrow(true);
 
-
+            //TODO 3 添加Redis集群的地址
             Set<HostAndPort> hostAndPortSet = new HashSet<>();
             hostAndPortSet.add(new HostAndPort("hadoop102", 6379));
             hostAndPortSet.add(new HostAndPort("hadoop102", 6380));
-
+            //TODO 2 创建JedisCluster对象，传入hostAndPortSet对象
             jedisCluster = new JedisCluster(hostAndPortSet, jedisPoolConfig);
             return jedisCluster;
-
         }else {
             return jedisCluster;
         }
