@@ -1,9 +1,11 @@
+package com.codejiwei.redis;
+
 import redis.clients.jedis.Jedis;
 
 import java.util.Set;
 
 /**
- * @ClassName Test
+ * @ClassName com.codejiwei.redis.Test
  * @Description TODO
  * @Author codejiwei
  * @Date 2020/12/15 17:05

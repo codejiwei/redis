@@ -1,7 +1,9 @@
+package com.codejiwei.redis;
+
 import redis.clients.jedis.Jedis;
 
 /**
- * @ClassName Jedis_string01
+ * @ClassName com.codejiwei.redis.Jedis_string01
  * @Description TODO
  * @Author codejiwei
  * @Date 2020/12/15 23:56

@@ -1,3 +1,5 @@
+package com.codejiwei.redis;
+
 import redis.clients.jedis.Jedis;
 
 import java.util.Arrays;
@@ -5,7 +7,7 @@ import java.util.HashMap;
 import java.util.Set;
 
 /**
- * @ClassName Jedis_zset01
+ * @ClassName com.codejiwei.redis.Jedis_zset01
  * @Description TODO
  * @Author codejiwei
  * @Date 2020/12/16 0:21

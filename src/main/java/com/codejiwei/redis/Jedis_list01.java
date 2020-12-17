@@ -1,10 +1,12 @@
+package com.codejiwei.redis;
+
 import redis.clients.jedis.Jedis;
 
 import java.util.Arrays;
 import java.util.List;
 
 /**
- * @ClassName Jedis_list01
+ * @ClassName com.codejiwei.redis.Jedis_list01
  * @Description TODO
  * @Author codejiwei
  * @Date 2020/12/16 0:00

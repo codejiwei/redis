@@ -1,10 +1,12 @@
+package com.codejiwei.redis;
+
 import redis.clients.jedis.Jedis;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @ClassName Jedis_hash01
+ * @ClassName com.codejiwei.redis.Jedis_hash01
  * @Description TODO
  * @Author codejiwei
  * @Date 2020/12/16 0:14
